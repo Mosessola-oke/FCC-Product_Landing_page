@@ -5,46 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./resources/css/style.css">
+  <script src="https://kit.fontawesome.com/b062ff3a5c.js" crossorigin="anonymous"></script>
   <title>FCC Product Landing Page</title>
 </head>
 
 <body class="grid-container">
   <header id="header">
-    <img src="" alt="Time Lord Sonic" id="header-img">
-    <nav id="nav-bar">
-      <ul>
-        <li class="nav-link"><a href="#product-info">Features</a></li>
-        <li class="nav-link"><a href="#media">How It Works</a></li>
-        <li class="nav-link"><a href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
-    <section id="sign-up">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input type="email" name="email" id="email" placeholder="Enter your Email address">
-        <input type="submit" value="GET STARTED" id="submit">
-      </form>
-    </section>
+    <div class="header-container">
+      <div class="logo">
+        <img src="./resources/images/logo.jpg" alt="Time Lord Sonic" id="header-img">
+        <h2>Time Lord Sonic</h2>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#product-info">Features</a></li>
+          <li><a class="nav-link" href="#media">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+      <section id="sign-up">
+        <h1 id="title">Handcrafted Masterpieces </h1>
+        <form class="form-container" id="form" action="https://www.freecodecamp.com/email-submit">
+          <input type="email" name="email" id="email" placeholder="Enter your email address">
+          <input type="submit" value="GET STARTED" id="submit">
+        </form>
+      </section>
   <main id="main">
     <section id="product-info">
-      <div>
-        <div class="icon"></div>
+      <div class="info-container">
+        <div class="icon"><i class="far fa-check-square fa-3x"></i></div>
         <div class="discrip">
           <h2>Premium Materials</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem aliquam harum nobis excepturi
             voluptatibus iste fugit quisquam expedita deserunt!</p>
         </div>
       </div>
-      <div>
-        <div class="icon"></div>
+      <div class="info-container">
+        <div class="icon"><i class="far fa-check-square fa-3x"></i></div>
         <div class="discrip">
           <h2>Quality Assured</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse itaque vero facilis, molestiae iusto
             asperiores vel, maiores voluptate soluta commodi, labore suscipit est!</p>
         </div>
       </div>
-      <div>
-        <div class="icon"></div>
+      <div class="info-container">
+        <div class="icon"><i class="far fa-check-square fa-3x"></i></div>
         <div class="discrip">
           <h2>Fast Shipping</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, magnam debitis illo quos unde
@@ -53,7 +60,7 @@
       </div>
     </section>
     <section id="media">
-      <iframe width="480" height="360" src="https://www.youtube.com/embed/YS7PyULf_FY" frameborder="0"
+      <iframe id="video" width="480" height="360" src="https://www.youtube.com/embed/YS7PyULf_FY" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <section id="pricing">
@@ -64,13 +71,13 @@
         <div id="button-container"><input type="button" value="Select" class="buy-now"></div>
       </div>
       <div class="price-container">
-        <h3>Steel Sonic Screwdriver</h3>
+        <h3 id="sonic-type">Steel Sonic Screwdriver</h3>
         <h3 id="price">£349</h3>
         <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
         <div id="button-container"><input type="button" value="Select" class="buy-now"></div>
       </div>
       <div class="price-container">
-        <h3>Plastic Sonic Screwdriver</h3>
+        <h3 id="sonic-type">Plastic Sonic Screwdriver</h3>
         <h3 id="price">£249</h3>
         <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
         <div id="button-container"><input type="button" value="Select" class="buy-now"></div>
@@ -79,14 +86,19 @@
   </main>
   <footer id="footer">
     <div id="footer-container">
-      <ul>
-        <li class="footer">Privacy</li>
-        <li class="footer">Terms</li>
-        <li class="footer">Contact</li>
-      </ul>
-      <p id="copyright-info">Copyright 2020, Time Lord Sonic</p>
+      <div>
+        <ul>
+          <li class="footer"><a href="#!">Privacy</a> </li>
+          <li class="footer"><a href="#!">Terms</a></li>
+          <li class="footer"><a href="#!">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p id="copyright-info">&copy; Copyright 2020, Time Lord Sonic</p>
+      </div>
     </div>
   </footer>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>

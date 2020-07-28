@@ -1,1 +1,27 @@
 @import '../../Global_SCSS/resets';
+@import '../../Global_SCSS/functions';
+@import '../../Global_SCSS/variables';
+@import '../../Global_SCSS/media-query';
+
+$primary-color: #003865;
+$secondary-color: #652500;
+$tertiary-color: #655800;
+
+.grid-container {
+  margin: 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px 10px;
+  grid-template-areas: 
+  "header header header"
+  "sign-up sign-up sign-up"
+  "main main main"
+  "footer footer footer";
+}
+
+@import 'header';
+
+@import 'main';
+
+@import 'footer';
