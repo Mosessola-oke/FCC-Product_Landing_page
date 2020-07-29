@@ -1,0 +1,48 @@
+@import "../../Global_SCSS/media-query";
+
+@include media-tablet {
+  #header {
+    ul {
+      flex-direction: row;
+      width: 35vw;
+    }
+    a{
+      font-size: 1.3rem;
+    }
+  }
+  #product-info {
+    max-width: 900px;
+  }
+
+  .info-container{
+    .discrip {
+      margin: 10px;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  iframe {
+    width: 680px;
+  }
+}
+
+@include media-laptop {
+  #pricing {
+    @include flexCenter(row);
+    .price-container {
+      margin: 20px 10px;
+    }
+  }
+  #header{
+    a{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+
